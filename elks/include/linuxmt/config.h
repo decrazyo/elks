@@ -115,7 +115,9 @@
 #define KERNEL_DATA     0x80  /* kernel data segment */
 #endif
 #define SETUP_DATA      CONFIG_ROM_SETUP_DATA
+// #define SETUP_HEAPSIZE  34656 /* force kernel heap size */
 #define SETUP_HEAPSIZE  34656 /* force kernel heap size */
+#define SETUP_MEM_KBYTES 128  /* force available memory in 1K bytes */
 #endif /* CONFIG_ROMCODE */
 
 
