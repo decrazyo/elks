@@ -54,7 +54,11 @@ char running_qemu;
 static int boot_console;
 static seg_t membase, memend;
 static char bininit[] = "/bin/init";
+#ifdef CONFIG_SYS_DEFSHELL_SASH
+static char binshell[] = "/bin/sash";
+#else
 static char binshell[] = "/bin/sh";
+#endif
 #ifdef CONFIG_SYS_NO_BININIT
 static char *init_command = binshell;
 #else
