@@ -54,8 +54,8 @@ init(void)
      current.next = nrand(0, 6);
 
      /* Score */
-     printxy(0, FRAMEH_NB + 2, FRAMEW + 3, "Score:");
-     printxy(0, FRAMEH_NB + 3, FRAMEW + 3, "Lines:");
+     printxy(0, FRAMEH + 2, 2, "Score:");
+     printxy(0, FRAMEH + 3, 2, "Lines:");
      DRAW_SCORE();
 
      /* Init signal */
@@ -184,7 +184,6 @@ main(int argc, char **argv)
 {
      init();
      frame_init();
-     frame_nextbox_init();;
 
      current.last_move = False;
 
